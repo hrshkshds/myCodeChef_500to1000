@@ -12,10 +12,20 @@ int main() {
     
     while ( T-- ) {
         
-        int a, b, c, d;
-        std::cin >> a >> b >> c >> d;
+        bool isin = true;
+        int opinion;
         
-        std::cout << (((a + b + c + d) == 0)? "IN" : "OUT") << "\n";
+        for (int i = 0; i < 4; i++) {
+            
+            std::cin >> opinion;
+            
+            if ( opinion == 1 ) {
+                isin = false;
+            }
+            
+        }
+        
+        std::cout << ((isin)? "IN" : "OUT") << "\n";
         
     }
 
