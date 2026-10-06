@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
+// #include <algorithm>
 // using namespace std;
 
 int main() {
 	// your code goes here
-    
+
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(NULL);
     
@@ -14,9 +15,13 @@ int main() {
         
         int p, q, r, s;
         std::cin >> p >> q >> r >> s;
-        
-        std::cout << ((p>(q+r+s) || q>(p+r+s) || r>(p+q+s) || s>(p+q+r))? "YES" : "NO") << "\n";
-        
+    
+        if ( (2 * std::max({p, q, r, s})) > (p + q + r + s) ) {
+            std::cout << "YES\n";
+        } else {
+            std::cout << "NO\n";
+        }
+    
     }
     
     return 0;
