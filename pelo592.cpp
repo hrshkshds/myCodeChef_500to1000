@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 // using namespace std;
 
-double valuation (int a, int b) {
+// double valuation (int a, int b) {
     
-    double v = (a * 100.0) / b;
+//     double v = (a * 100.0) / b;
     
-    return v;
-}
+//     return v;
+// }
 
 int main() {
 	// your code goes here
@@ -22,12 +22,12 @@ int main() {
         int a, b;
         std::cin >> a >> b;
         
-        a = valuation(a, 10);
-        b = valuation(b, 20);
+        // a = valuation(a, 10);
+        // b = valuation(b, 20);
         
-        if ( a > b ) {
+        if ( 2 * a > b ) {
             std::cout << "FIRST\n";
-        } else if ( a < b ) {
+        } else if ( 2 * a < b ) {
             std::cout << "SECOND\n";
         } else {
             std::cout << "ANY\n";
