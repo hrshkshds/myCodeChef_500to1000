@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+// #include <algorithm>
 // using namespace std;
 
 int main() {
@@ -15,7 +16,8 @@ int main() {
 	    int a, b, c;
 	    std::cin >> a >> b >> c;
 	    
-	    if (a <= b && c <= b) {
+	   // if (a <= b && c <= b) {
+	   if (std::max(a, c) <= b) {
 	        std::cout << "YES\n";
 	    } else {
 	        std::cout << "NO\n";
@@ -25,4 +27,3 @@ int main() {
 	
 	return 0;
 }
-
