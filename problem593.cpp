@@ -15,7 +15,9 @@ int main() {
         int x;
         std::cin >> x;
         
-        if ( x%4 == 0 ){
+        // if ( x%4 == 0 ){
+        if ( (x & 3) == 0 ) { // using bitwise operator
+        // checking the last 2 bits of the number
             std::cout << "GOOD\n";
         } else {
             std::cout << "NOT GOOD\n";
